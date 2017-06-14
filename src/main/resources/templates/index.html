@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link th:herf="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:herf="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+</head>
+<body>
+   <form action="/update.do">
+       <table >
+           <tr>
+               <td>地址</td> <td>用户名</td> <td>密码</td>
+           </tr>
+           <tr>
+               <td><input type="text" name="url" th:value='${url}'/></td>
+               <td><input type="text" name="username" th:value='${username}'/></td>
+               <td><input type="text" name="pwd" th:value='${pwd}'/></td>
+               <td><input type="submit" value="修改"/></td>
+           </tr>
+       </table>
+   </form>
+    <script th:src="@{jquery.min.js}" type="text/javascript"></script>
+    <script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+
+
+</body>
+
+</html>
